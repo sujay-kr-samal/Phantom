@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+<body>
+    <div class="welcome">
+        <h1>WELCOME</h1>
+    </div>
+
+    <!-- Proper FORM starts here -->
+    <div class="sys">
+        <form action="/sysprompt" method="POST">
+            <input type="hidden" name="username" value="{{ username }}">  <!-- Hidden username -->
+            <div class="sysprompt">
+                <input type="text" name="sysinput" placeholder="System Prompt..." required>
+            </div>
+            <div class="code">
+                <input type="text" name="codeinput" placeholder="Phantom Code..." required>
+            </div>
+            <button class="SAVE" type="submit" style="--i:21; --j:4;">SAVE</button>
+        </form>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+</html>

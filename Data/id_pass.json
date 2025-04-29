@@ -1,0 +1,10 @@
+{
+    "users": [
+        {
+            "username": "phantom",
+            "password": "phantom_realm",
+            "system_prompt": "dvSDv",
+            "phantom_code": "dvDV"
+        }
+    ]
+}
