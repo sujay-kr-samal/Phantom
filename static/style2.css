@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anurati&display=swap');
 
 body {
-    background-color: #000;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -59,11 +59,15 @@ body {
     font-size: 20px;
     color: rgb(255, 255, 255);
     margin-left: 100px;
-    border-radius: 50px;
+    border-radius: 30px;
     margin-top: 50px;
     text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
     box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
 }
+input::placeholder {
+    color: #ffffff; /* Replace with your desired color */
+    opacity: 1;     /* Optional: make sure it's fully visible */
+  }
 .SAVE{
     background-color: #000000;
     height: 50px;
@@ -71,7 +75,7 @@ body {
     font-size: 20px;
     color: rgb(255, 255, 255);
     margin-left: 110px;
-    border-radius: 50px;
+    border-radius: 15px;
     margin-top: 50px;
     text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
     box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
