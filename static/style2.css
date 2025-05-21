@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anurati&display=swap');
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated .welcome */
+.welcome {
+    font-family: 'Anurati';
+    font-size: 44px;
+    color: #0ff;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 1;
+}
+
+/* Animation for text appearing */
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for each letter inside welcome */
+.welcome h1 {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff;
+    color: #fff;
+    opacity: 0;
+    animation: text-appear 1s ease-in-out forwards;
+    animation-delay: 0.2s; /* Adjusted to a static delay */
+    display: inline-block;
+}
+
+/* Updated .sys box */
+
+.sysprompt {
+    background-color: #000000;
+    height: 200px;
+    width: 80%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    padding: 20px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.sysprompt input {
+    background-color: #000000;
+    height: 200px;
+    width: 80%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+
+.code input{
+    background-color: #000000;
+    height: 100px;
+    width: 30%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    border-radius: 30px;
+    margin-top: 50px;
+    text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+input::placeholder {
+    color: #ffffff; /* Replace with your desired color */
+    opacity: 1;     /* Optional: make sure it's fully visible */
+  }
+.SAVE{
+    background-color: #000000;
+    height: 50px;
+    width: 10%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 110px;
+    border-radius: 15px;
+    margin-top: 50px;
+    text-shadow:  0 0 5px #0ff, 0 0 10px #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.SAVE:hover {
+    scale: 1.05;
+    cursor: pointer;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+}

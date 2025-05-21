@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PHANTOM</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style3.css">
+</head>
+<body>
+    <div class="name">
+        <h1>PHANTOM</h1>
+    </div>
+
+    <div class="chats">
+        <textarea class="screen" id="chat-screen" readonly>{{ response_text }}</textarea>
+    </div>
+
+    <form action="/input" method="POST">        
+        <!-- Hidden Fields -->
+        <input type="hidden" name="username" value="{{ username }}">
+
+        <div class="input">
+            <input type="text" id="input" name="input_txt" placeholder="Type your message here...">
+            <button type="submit">&#10148;</button>
+        </div>
+    </form>
+    <script>
+        window.onload = function () {
+            const chatScreen = document.getElementById("chat-screen");
+            chatScreen.scrollTop = chatScreen.scrollHeight;
+        };
+    </script>
+
+</body>
+</html>
