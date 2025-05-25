@@ -77,7 +77,7 @@ def Ai(query, username):
     from groq import Groq
     import json
 
-    client = Groq(api_key="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") # Store your API key securely as an environment variable
+    client = Groq(api_key="YOUR API KEY")
 
     def RealtimeInformation():
         now = datetime.datetime.now()
